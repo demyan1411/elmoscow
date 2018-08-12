@@ -1,0 +1,19 @@
+{
+  "description": "Project test coverage",
+  "all": true,
+  "extension": [
+    ".js",
+    ".vue"
+  ],
+  "include": [
+    "src/**/*.js",
+    "src/**/*.json",
+    "src/**/*.vue"
+  ],
+  "instrument": false,
+  "sourceMap": false,
+  "reporter": [
+    "lcov",
+    "text"
+  ]
+}

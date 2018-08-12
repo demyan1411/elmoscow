@@ -1,0 +1,14 @@
+doctype html
+html
+    include ../common/partials/head.pug
+
+    body
+        #app
+            .Page 
+                include ../common/partials/header.pug
+
+                main
+                    block content
+
+                include ../common/partials/footer.pug
+            //- include ../common/modals/modals

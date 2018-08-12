@@ -1,0 +1,9 @@
+build/*.js
+config/*.js
+src/components/*.vue
+src/components/**/*.vue
+src/components/*.js
+src/components/**/*.js
+src/helpers/**
+test/**
+src/modules/dealreg/app/helpers/locales/

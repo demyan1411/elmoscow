@@ -1,0 +1,64 @@
+extends ../layouts/base.pug
+
+block menu
+    include ../common/partials/menu-products
+
+block content
+    section.filters
+        .container
+            .row
+                .col 
+                    .dropdown
+                        button#Agriculture.dropdown-btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                            | Отрасли
+                        .dropdown-menu(aria-labelledby='Agriculture')
+                            a.dropdown-item(href='#') Промышленность
+                            a.dropdown-item(href='#') Сельское хозяйство
+                            a.dropdown-item(href='#') Культура
+                            a.dropdown-item(href='#') Образование
+                            a.dropdown-item(href='#') Здравоохранение
+                            a.dropdown-item(href='#') Социальное обеспечение
+                            a.dropdown-item(href='#') Строительство
+                            a.dropdown-item(href='#') Транспорт
+                            a.dropdown-item(href='#') Связь
+                            a.dropdown-item(href='#') Торговля
+                            a.dropdown-item(href='#') Общественное питание
+                            a.dropdown-item(href='#') Логистика
+                            a.dropdown-item(href='#') Наука
+                            a.dropdown-item(href='#') Управление
+                            a.dropdown-item(href='#') Жилищно-коммунальное хозяйство
+                            a.dropdown-item(href='#') Бытовое обслуживание населения
+                            
+                            
+                    .dropdown
+                        button#types.dropdown-btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                            | Для кого
+                        .dropdown-menu(aria-labelledby='types')
+                            a.dropdown-item(href='#') Государственный сектор
+                            a.dropdown-item(href='#') Операторы
+                            a.dropdown-item(href='#') Крупный бизнес
+                            a.dropdown-item(href='#') Малый бизнес
+                            a.dropdown-item(href='#') Частные клиенты
+                                    
+                    .dropdown
+                        button#technologies.dropdown-btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                            | Все технологии
+                        .dropdown-menu(aria-labelledby='technologies')
+                            a.dropdown-item(href='#') Облачные решения
+                            a.dropdown-item(href='#') Программное обеспечение
+                            a.dropdown-item(href='#') Инфраструктурные решения
+                                            
+                    .dropdown
+                        button#statuses.dropdown-btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                            | Все статусы
+                        .dropdown-menu(aria-labelledby='statuses')
+                            a.dropdown-item(href='#') Действующие
+                            a.dropdown-item(href='#') В разработке
+                            a.dropdown-item(href='#') Приостановленные
+                    
+        
+    include ../common/products/products
+    //- include ../common/index/main-block
+    //- include ../common/index/news-blogs
+    //- include ../common/index/discussions
+    //- include ../common/index/public-video

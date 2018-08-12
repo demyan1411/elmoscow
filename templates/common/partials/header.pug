@@ -1,0 +1,37 @@
+header.main-header.bdb-gray
+    .bdb-gray
+        .container
+            .row
+                .col
+                    nav.navbar.navbar-expand-xl.navbar-light
+                        a.navbar-brand(href='#')
+                            img(src=require('images/logo.svg'))
+
+                        button.navbar-toggler(
+                            data-toggle="collapse"
+                            data-target="#navbarNavDropdown"
+                            aria-controls="navbarNavDropdown"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation")
+                            
+                            span.navbar-toggler-icon
+
+                        #navbarNavDropdown.collapse.navbar-collapse
+                            .navbar-collapse-close(data-toggle="collapse" data-target="#navbarNavDropdown")
+                                span.ai.ai-icon_cross-fat
+                                    
+                            block menu
+    
+                            .navbar-left
+                                a.link-blue(href="#") Вход в систему
+                                .btn-group
+                                    button.btn.active рус
+                                    button.btn eng
+
+    .container
+        .row
+            .col
+                form.search.form-inline
+                    button
+                        img(src=require('images/search.svg'))
+                    input.form-control(placeholder="Поиск по продуктам")

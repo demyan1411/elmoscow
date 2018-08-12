@@ -1,0 +1,27 @@
+.DS_Store
+.rempl_endpoint_id
+.tmp
+
+src/assets/images/all_images
+src/assets/fonts-all
+static/fonts
+maket/
+node_modules/
+coverage/
+/final/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/test/unit/coverage/
+/test/e2e/reports/
+selenium-debug.log
+.nyc_output
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.db
