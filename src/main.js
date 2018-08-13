@@ -29,6 +29,12 @@ $(document).ready(function () {
             scrollTop: $(id).offset().top
         }, 400)
     })
+
+    $('[data-toggle="tooltip"]').tooltip()
+
+    $('.products-close').on('click', function(e) {
+        $(this).closest('.products-item').hide()
+    })
 })
 // import 'bootstrap/js/dist/dropdown'
 // import 'bootstrap/js/dist/collapse'

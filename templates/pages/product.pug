@@ -71,15 +71,15 @@ block content
                                         img.card-img-top(src=require('images/clip.svg'))
                                         | Информация для руководителя (PDF)
                                         
-                                li
+                                //- li
                                     span.about-product-link
                                         img.card-img-top(src=require('images/block.svg'))
                                         | Закрытый файл
-                                        
-                                li
-                                    span.about-product-link
-                                        img.card-img-top(src=require('images/block.svg'))
-                                        | Закрытый файл
+                                //- 
+                                //- li
+                                //-     span.about-product-link
+                                //-         img.card-img-top(src=require('images/block.svg'))
+                                //-         | Закрытый файл
                     
                     .screenshots
                         h4 Скриншоты
@@ -122,7 +122,8 @@ block content
                                 a.demands-block-link(href='#') 
                                     img(src=require('images/content.svg'))
                                     | Содержание
-                                a.btn.btn-outline-primary(href='#') Скачать
+                                a.btn.btn-outline-primary.disabled(href='#') Скачать
+                                img.demands-block-img(src=require('images/block.svg'))
                 .col 
                     .demands-block
                         .row
@@ -133,7 +134,8 @@ block content
                                 a.demands-block-link(href='#') 
                                     img(src=require('images/content.svg'))
                                     | Содержание
-                                a.btn.btn-outline-primary(href='#') Скачать
+                                a.btn.btn-outline-primary.disabled(href='#') Скачать
+                                img.demands-block-img(src=require('images/block.svg'))
                                 
         .container
             .row
@@ -269,7 +271,7 @@ block content
                             .person-name Игорь Романов
                             .person-position Руководитель отделения Минтранспорта
                     
-    section.section#request
+    section.section.section-blue#request
         .container
             .row
                 .col 
@@ -302,7 +304,7 @@ block content
                             label Сайт вашей компании
                             input.form-control
                     .col-lg-4
-                        button.btn.btn-secondary.mt-4 Отправить заявку
+                        button.btn.btn-outline-secondary.btn-lg.mt-4 Отправить заявку
     //- include ../common/index/main-block
     //- include ../common/index/news-blogs
     //- include ../common/index/discussions
