@@ -35,6 +35,8 @@ $(document).ready(function () {
     $('.products-close').on('click', function(e) {
         $(this).closest('.products-item').hide()
     })
+
+    // $('.submenu > li').matchHeight()
 })
 // import 'bootstrap/js/dist/dropdown'
 // import 'bootstrap/js/dist/collapse'

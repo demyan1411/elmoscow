@@ -6,6 +6,7 @@
 @import "./footer";
 @import "./btn";
 @import "./cards";
+@import "./submenu";
 // @import "./slick";
 // @import "./share";
 // @import "./main-block";
@@ -39,6 +40,14 @@
 
 html, body {
     height: 100%;
+}
+
+h2 {
+    color: #333333; font-size: 20px; margin-bottom: 20px; margin-top: 40px;
+}
+
+.text-gray {
+    color: #999999
 }
 
 #app {
@@ -309,7 +318,7 @@ h4 {
 
 .filters {
     background: #f5f5f5;
-    padding: 23px 0;
+    // padding: 23px 0;
 
     .dropdown {
         display: inline-block;
@@ -673,6 +682,14 @@ form {
     .btn {
         width: 100%;
         margin-top: 31px !important;
+    }
+}
+
+.news-post {
+    .news-img-top {
+        display: block;
+        margin-bottom: 30px;
+        max-width: 700px;
     }
 }
 

@@ -6,7 +6,108 @@ block menu
 block content
     section.filters
         .container
-            .row
+            ul.top-menu
+                li
+                    .dropdown Отрасли
+                    ul.submenu 
+                        li
+                            ul
+                                li
+                                    a(href='') Безопасность и правопорядок
+                                    
+                                li
+                                    a(href='') Градостроительный комплекс
+                                        
+                                li
+                                    a(href='') ЖКХ и жилполитика
+                                            
+                                li
+                                    a(href='') Здравоохранение
+                                    
+                                li
+                                    a(href='') Имущественный комплекс
+                                    
+                                li
+                                    a(href='') Культура, культурное наследие и спорт
+                                    
+                        li
+                            ul
+                                li
+                                    a(href='') Образование
+                                    
+                                li
+                                    a(href='') Общегородские задачи и проекты
+                                        
+                                li
+                                    a(href='') Социальная сфера
+                                            
+                                li
+                                    a(href='') Территориальные органы власти
+                                    
+                                li
+                                    a(href='') Торговля
+                                    
+                                li
+                                    a(href='') Транспорт
+                                    
+                        li
+                            ul
+                                li
+                                    a(href='') Туризм
+                                    
+                                li
+                                    a(href='') Финансы и экономика
+                                        
+                                li
+                                    a(href='') Природопользование и экология
+                                            
+                                li
+                                    a(href='') Управление
+                                    
+                                li
+                                    a(href='') Информационные технологии
+                                    
+                                li
+                                    a(href='') Прочее
+                                    
+                li
+                    .dropdown Для кого
+                    
+                    ul.submenu 
+                        li
+                            ul
+                                li
+                                    a(href='') Государственный сектор
+                                    
+                                li
+                                    a(href='') Операторы
+                                        
+                                li
+                                    a(href='') Крупный бизнес
+                                        
+                                li
+                                    a(href='') Малый бизнес
+                                        
+                                li
+                                    a(href='') Частные клиенты
+                                    
+                li
+                    .dropdown Технологии
+                    
+                    ul.submenu 
+                        li
+                            ul
+                                li
+                                    a(href='') Облачные решения
+                                    
+                                li
+                                    a(href='') Программное обеспечение
+                                        
+                                li
+                                    a(href='') Инфраструктурные решения
+                                    
+                
+            //-.row
                 .col 
                     .dropdown
                         button#Agriculture.dropdown-btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
@@ -48,7 +149,7 @@ block content
                             a.dropdown-item(href='#') Программное обеспечение
                             a.dropdown-item(href='#') Инфраструктурные решения
                                             
-                    .dropdown
+                    //-.dropdown
                         button#statuses.dropdown-btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                             | Все статусы
                         .dropdown-menu(aria-labelledby='statuses')

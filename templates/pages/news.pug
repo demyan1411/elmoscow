@@ -1,0 +1,65 @@
+extends ../layouts/base.pug
+
+block menu
+    include ../common/partials/menu-news
+    
+block content
+    section.section.pb-3
+        .container
+            .row
+                .col 
+                    h3.mb-3 Новости
+                    
+                    .cards.cards-post
+                        .row
+                            .col-lg-3
+                                .card
+                                    img.card-img-top(src=require('images/photo.jpeg'))
+                                    .card-body
+                                        h5.card-title 12 сентября, 16:47
+                                    a.card-text(href='#')
+                                        | Дмитрий Медведев поздравил Сергея Собянина с успехами в развитии электронных для населения Москвы
+                                        
+                            .col-lg-3
+                                .card
+                                    img.card-img-top(src=require('images/news_film_moscva_2018_500Normal.png'))
+                                    .card-body
+                                        h5.card-title 12 сентября, 16:47
+                                    a.card-text(href='#')
+                                        | Фильм «Большой» — фаворит активных граждан
+                                        
+                            .col-lg-3
+                                .card
+                                    img.card-img-top(src=require('images/GroupNormal.png'))
+                                    .card-body
+                                        h5.card-title 12 сентября, 16:47
+                                    a.card-text(href='#')
+                                        | Информация о врачах на сайтах поликлиник
+                                        
+                            .col-lg-3
+                                .card
+                                    img.card-img-top(src=require('images/news_exkyrsii_izmailovo_2018_500Normal.png'))
+                                    .card-body
+                                        h5.card-title 12 сентября, 16:47
+                                    a.card-text(href='#')
+                                        | Темы экскурсий в Измайловском парке
+                                        
+                            .col-lg-3
+                                .card
+                                    img.card-img-top(src=require('images/photo.jpeg'))
+                                    .card-body
+                                        h5.card-title 12 сентября, 16:47
+                                    a.card-text(href='#')
+                                        | Дмитрий Медведев поздравил Сергея Собянина с успехами в развитии электронных для населения Москвы
+                                        
+                            .col-lg-3
+                                .card
+                                    img.card-img-top(src=require('images/news_film_moscva_2018_500Normal.png'))
+                                    .card-body
+                                        h5.card-title 12 сентября, 16:47
+                                    a.card-text(href='#')
+                                        | Фильм «Большой» — фаворит активных граждан
+                    
+                    
+                    
+                    

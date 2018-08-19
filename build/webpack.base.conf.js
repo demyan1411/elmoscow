@@ -165,6 +165,18 @@ module.exports = {
             inject: true
         }),
 
+        new HtmlWebpackPlugin({
+            filename: 'news.html',
+            template: resolve('templates/pages/news.pug'),
+            inject: true
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: 'news-post.html',
+            template: resolve('templates/pages/news-post.pug'),
+            inject: true
+        }),
+
         new ExtractTextPlugin({
             filename: 'css/app.css',
             allChunks: true
