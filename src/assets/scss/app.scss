@@ -778,6 +778,15 @@ form {
     }
 }
 
+.screenshots-images {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 440px) {
     .screenshots {
         .screenshots-images {
