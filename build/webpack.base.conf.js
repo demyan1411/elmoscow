@@ -172,6 +172,12 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
+            filename: 'product-old2.html',
+            template: resolve('templates/pages/product_old2.pug'),
+            inject: true
+        }),
+
+        new HtmlWebpackPlugin({
             filename: 'news.html',
             template: resolve('templates/pages/news.pug'),
             inject: true
