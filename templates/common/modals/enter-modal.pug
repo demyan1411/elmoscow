@@ -1,4 +1,4 @@
-#enter-modal.modal.fade(
+#demand1.modal.fade(
     tabindex="-1"
     role="dialog"
     aria-hidden="true")
@@ -6,59 +6,18 @@
     .modal-dialog(role="document")
         .modal-content
             .modal-body
-                .title
-                    | Вход
+                .wysiwyg
+                    h3 О продукте
+                    p Среди главных задач проекта — получение мнения горожан по актуальным вопросам, касающимся развития Москвы. Опросы «Активного гражданина» делятся на три категории
 
-                .modal-close(
-                data-dismiss="modal"
-                aria-label="Close"
-                aria-hidden="true") &times;
+                    ul
+                        li «Проход и питание по электронной карте»
+                        li «Государственные услуги в сфере образования в электронном виде»
+                        li Общегородская платформа «Электронных образовательных материалов»
+                        li «Зачисления в учреждения дополнительного образования»
 
-                form
-                    .form-group
-                        input.form-control(
-                        type='text'
-                        placeholder="Адрес электронной почты")
-
-                        //.form-text Для авторизации по номеру телефона введите его в формате: 7XXXXXXXXXX
-
-
-                    .form-group
-                        input.form-control(
-                        type='password'
-                        placeholder="Пароль")
-
-                    .form-group.d-flex.justify-content-between.align-items-center
-                        label.checkbox
-                            input(type="checkbox")
-                            .checkbox-button
-                                span.ai.ai-icon_check
-                            span Чужой компьютер
-
-                        .link-light-blue.js-forgot Забыли пароль
-
-                    .d-flex.justify-content-end
-                        button.btn.btn-secondary
-                            span Войти
-                            span.ai.ai-icon_login
-
-
-            .modal-footer
-                .text Войти, используя аккаунт соцсети
-                ul.buttons-share
-                    li
-                        a.fb(href='')
-
-                    li
-                        a.vk(href='')
-
-                    li
-                        a.gp(href='')
-
-                    li
-                        a.tw(href='')
 
             .modal-footer.modal-footer-double
-                .btn.btn-outline-primary.btn-white
-                    span Регистрация
-                    span.ai.ai-icon_sign-right
+                .btn.btn-outline-primary.btn-white(data-dismiss="modal")
+                    span Закрыть
+                    //span.ai.ai-icon_sign-right

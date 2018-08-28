@@ -2,28 +2,28 @@ extends ../layouts/base.pug
 
 block menu
     include ../common/partials/menu-products
-    
+
 block content
     section.main-product
         .container
             .row
-                .col 
+                .col
                     .main-product-body
                         .main-product-image
                             img(src=require('images/A.svg'))
                         .main-product-content
                             h1 Активный гражданин
-                            .subtitle 
+                            .subtitle
                                 img.card-img-top(src=require('images/product.svg'))
                                 | Действующий
                             .text Проект создан как площадка для проведения среди различных групп москвичей голосований в электронной форме по вопросам городского развития.
-                            
+
                             a.btn.btn-primary.js-scroll(href='#request') Отправить заявку
-                            
+
     section.product-nav.bdb-gray
         .container
             .row
-                .col 
+                .col
                     nav.navbar.navbar-expand-lg
                         ul.navbar-nav.mr-auto
                             li.nav-item
@@ -33,7 +33,7 @@ block content
                             li.nav-item.nav-item-dropdown.animation-arrow
                                 a.nav-link.js-scroll(href='#demands')
                                     span.nav-link-text Требования
-                                    
+
                             li.nav-item.nav-item-dropdown.animation-arrow
                                 a.nav-link.js-scroll(href='#using')
                                     span.nav-link-text Использование
@@ -46,73 +46,197 @@ block content
                                 a.nav-link.js-scroll(href='#Implications')
                                     span.nav-link-text Внедрения
 
-    section.section.bdb-gray#about-product
+    section.section.bdb-gray.wysiwyg#about-product
         .container
             .row
-                .col 
+                .col-lg-8
                     h3 О продукте
-                    .about-product
-                        div
-                            p.text Среди главных задач проекта — получение мнения горожан по актуальным вопросам, касающимся развития Москвы. Опросы «Активного гражданина» делятся на три категории: общегородские, отраслевые и районные. За активное участие в опросах начисляются бонусные баллы, которые можно обменять на вознаграждения.
+                    p Среди главных задач проекта — получение мнения горожан по актуальным вопросам, касающимся развития Москвы. Опросы «Активного гражданина» делятся на три категории: общегородские, отраслевые и районные. За активное участие в опросах начисляются бонусные баллы, которые можно обменять на вознаграждения.
 
-                            p.text Спустя менее года, 6 марта 2015 года, число зарегистрированных пользователей «Активного гражданина» превысило 1 миллион человек. Всего за первый год было проведено 500 опросов и голосований, в которых пользователи оставили 25 миллионов мнений, на основании которых были приняты более 250 управленческих решений. В первую годовщину проекта московские власти объявили о создании волонтёрского объединения, призванного отслеживать выполнение городом обязательств, принятых по результатам обсуждений в «Активном гражданине». 
-                            
-                            h2
-                                | Основные информационные системы, обеспечивающие государственное управление и проведения государственной политики в сфере образования города Москвы
-                            ul.text-gray
-                                li «Проход и питание по электронной карте»
-                                li «Государственные услуги в сфере образования в электронном виде»
-                                li Общегородская платформа «Электронных образовательных материалов»
-                                li «Зачисления в учреждения дополнительного образования»
-                                li «Электронный журнал и дневник учащегося»
-                                li «НСИ и Реестры системы образования»
-                            
-                        div.about-product-links
-                            strong Файлы для скачивания
-                            
-                            ul
-                                li
-                                    a.about-product-link(href='#') 
-                                        img.card-img-top(src=require('images/clip.svg'))
-                                        | презентация (PDF)
-                                        
-                                li
-                                    a.about-product-link(href='#') 
-                                        img.card-img-top(src=require('images/clip.svg'))
-                                        | Информация для руководителя (PDF)
-                                        
-                                //- li
-                                    span.about-product-link
-                                        img.card-img-top(src=require('images/block.svg'))
-                                        | Закрытый файл
-                                //- 
-                                //- li
-                                //-     span.about-product-link
-                                //-         img.card-img-top(src=require('images/block.svg'))
-                                //-         | Закрытый файл
-                    
+                    p Спустя менее года, 6 марта 2015 года, число зарегистрированных пользователей «Активного гражданина» превысило 1 миллион человек. Всего за первый год было проведено 500 опросов и голосований, в которых пользователи оставили 25 миллионов мнений, на основании которых были приняты более 250 управленческих решений. В первую годовщину проекта московские власти объявили о создании волонтёрского объединения, призванного отслеживать выполнение городом обязательств, принятых по результатам обсуждений в «Активном гражданине».
+
+                    h4
+                        | Основные информационные системы, обеспечивающие государственное управление и проведения государственной политики в сфере образования города Москвы
+                    ul
+                        li «Проход и питание по электронной карте»
+                        li «Государственные услуги в сфере образования в электронном виде»
+                        li Общегородская платформа «Электронных образовательных материалов»
+                        li «Зачисления в учреждения дополнительного образования»
+                        li «Электронный журнал и дневник учащегося»
+                        li «НСИ и Реестры системы образования»
+
+                    table
+                        colgroup
+                            col
+                            col
+                            col
+                        tbody
+                            tr
+                                td
+                                    p.text
+                                        | 1
+                                td
+                                    p.text
+                                        | Автоматизированная информационная система документооборота Комплекса имущественно-земельных отношений города Москвы
+                                td
+                                    p.text
+                                        | Департамент городского имущества
+                            tr
+                                td
+                                    p.text
+                                        | 2
+                                td
+                                    p.text
+                                        | Автоматизированная информационная система "Реестр государственных учреждений"
+                                td
+                                    p.text
+                                        | Департамент городского имущества
+                            tr
+                                td
+                                    p.text
+                                        | 3
+                                td
+                                    p.text
+                                        | Автоматизированная информационно-справочная система "Реестр государственных унитарных, казенных предприятий города Москвы"
+                                td
+                                    p.text
+                                        | Департамент городского имущества
+                            tr
+                                td
+                                    p.text
+                                        | 4
+                                td
+                                    p.text
+                                        | Автоматизированная информационно-справочная система "Реестр хозяйственных обществ, товариществ и некоммерческих организаций с участием города Москвы"
+                                td
+                                    p.text
+                                        | Департамент городского имущества
+                            tr
+                                td
+                                    p.text
+                                        | 5
+                                td
+                                    p.text
+                                        | Автоматизированная информационная система «Реестр собственности города Москвы»
+                                td
+                                    p.text
+                                        | Департамент городского имущества
+                            tr
+                                td
+                                    p.text
+                                        | 6
+                                td
+                                    p.text
+                                        | Единый реестр собственности
+                                    p.text
+                                td
+                                    p.text
+                                        | Департамент городского имущества
+                            tr
+                                td
+                                    p.text
+                                        | 7
+                                td
+                                    p.text
+                                        | Автоматизированная информационно-аналитическая система "Недвижимость-Финансы"
+                                td
+                                    p.text
+                                        | Департамент городского имущества
+                            tr
+                                td
+                                    p.text
+                                        | 8
+                                td
+                                    p.text
+                                        | Информационная система Реестра единых объектов недвижимости города Москвы
+                                td
+                                    p.text
+                                        | Департамент городского имущества
+                            tr
+                                td
+                                    p.text
+                                        | 9
+                                td
+                                    p.text
+                                        | Комплексная система безопасности
+                                td
+                                    p.text
+                                        | Департамент городского имущества
+
+
+                .col-lg-4
+                    div.about-product-links
+                        strong Файлы для скачивания
+
+                        ul
+                            li
+                                a.about-product-link(href='#')
+                                    img.card-img-top(src=require('images/clip.svg'))
+                                    | презентация (PDF)
+
+                            li
+                                a.about-product-link(href='#')
+                                    img.card-img-top(src=require('images/clip.svg'))
+                                    | Информация для руководителя (PDF)
+
+                            //- li
+                                span.about-product-link
+                                    img.card-img-top(src=require('images/block.svg'))
+                                    | Закрытый файл
+                            //-
+                            //- li
+                            //-     span.about-product-link
+                            //-         img.card-img-top(src=require('images/block.svg'))
+                            //-         | Закрытый файл
+
+            .row
+                .col
                     div.mt-4
                         h3 Продукты
-                        //-.screenshots-images
-                            ul
+                        .screenshots-images
+                            .row
+                                .col-lg-2.col-md-4.col-sm-6
+                                    a(href=require('images/screen1.png') data-fancybox="gallery")
+                                        img(src=require('images/screen1.png'))
+
+                                .col-lg-2.col-md-4.col-sm-6
+                                    a(href=require('images/screen1.png') data-fancybox="gallery")
+                                        img(src=require('images/screen1.png'))
+
+                                .col-lg-2.col-md-4.col-sm-6
+                                    a(href=require('images/screen1.png') data-fancybox="gallery")
+                                        img(src=require('images/screen1.png'))
+
+                                .col-lg-2.col-md-4.col-sm-6
+                                    a(href=require('images/screen1.png') data-fancybox="gallery")
+                                        img(src=require('images/screen1.png'))
+
+                                .col-lg-2.col-md-4.col-sm-6
+                                    a(href=require('images/screen1.png') data-fancybox="gallery")
+                                        img(src=require('images/screen1.png'))
+
+                                .col-lg-2.col-md-4.col-sm-6
+                                    a(href=require('images/screen1.png') data-fancybox="gallery")
+                                        img(src=require('images/screen1.png'))
+                            //-ul
                                 li
-                                    img.card-img-top(src=require('images/screen1.png'))
-                                        
+                                    img(src=require('images/screen1.png'))
+
                                 li
-                                    img.card-img-top(src=require('images/screen1.png'))
-                                        
+                                    img(src=require('images/screen1.png'))
+
                                 li
-                                    img.card-img-top(src=require('images/screen1.png'))
-                                        
+                                    img(src=require('images/screen1.png'))
+
                                 li
-                                    img.card-img-top(src=require('images/screen1.png'))
-                                        
+                                    img(src=require('images/screen1.png'))
+
                                 li
-                                    img.card-img-top(src=require('images/screen1.png'))
-                                        
+                                    img(src=require('images/screen1.png'))
+
                                 li
-                                    img.card-img-top(src=require('images/screen1.png'))
-                                    
+                                    img(src=require('images/screen1.png'))
+
                         .cards
                             .row
                                 .col.col-lg-3
@@ -122,7 +246,7 @@ block content
                                             a.card-title(href='http://krylev.ru/elmoscow/product.html') Активный гражданин
                                             .card-text
                                                 | Проект создан как площадка для проведения среди различных групп москвичей голосований в электронной форме по вопросам городского развития.
-                                                
+
                                 .col.col-lg-3
                                     .card
                                         img.card-img-top(src=require('images/A.svg'))
@@ -130,7 +254,7 @@ block content
                                             a.card-title(href='http://krylev.ru/elmoscow/product.html') Активный гражданин
                                             .card-text
                                                 | Проект создан как площадка для проведения среди различных групп москвичей голосований в электронной форме по вопросам городского развития.
-                                                
+
                                 .col.col-lg-3
                                     .card
                                         img.card-img-top(src=require('images/A.svg'))
@@ -138,7 +262,7 @@ block content
                                             a.card-title(href='http://krylev.ru/elmoscow/product.html') Активный гражданин
                                             .card-text
                                                 | Проект создан как площадка для проведения среди различных групп москвичей голосований в электронной форме по вопросам городского развития.
-                                                
+
                                 .col.col-lg-3
                                     .card
                                         img.card-img-top(src=require('images/A.svg'))
@@ -146,150 +270,150 @@ block content
                                             a.card-title(href='http://krylev.ru/elmoscow/product.html') Активный гражданин
                                             .card-text
                                                 | Проект создан как площадка для проведения среди различных групп москвичей голосований в электронной форме по вопросам городского развития.
-                            
-                    
-    //-section.section.bdb-gray.pb-4#demands
+
+
+    section.section.bdb-gray.pb-4#demands
         .container
             .row
-                .col 
+                .col
                     h3 Требования
-                    
+
         .container
             .row
-                .col 
+                .col
                     .demands-block
                         .row
-                            .col 
+                            .col
                                 .demands-block-text Требования к основной вычислительной технике
                                 .demands-block-info PDF, 12 Мб
-                            .col 
-                                a.demands-block-link(href='#') 
+                            .col
+                                a.demands-block-link(href='#' data-toggle="modal" data-target="#demand1")
                                     img(src=require('images/content.svg'))
                                     | Содержание
                                 a.btn.btn-outline-primary.disabled(href='#') Скачать
                                 img.demands-block-img(src=require('images/block.svg'))
-                .col 
+                .col
                     .demands-block
                         .row
-                            .col 
+                            .col
                                 .demands-block-text Требования к основной вычислительной технике
                                 .demands-block-info PDF, 12 Мб
-                            .col 
-                                a.demands-block-link(href='#') 
+                            .col
+                                a.demands-block-link(href='#' data-toggle="modal" data-target="#demand1")
                                     img(src=require('images/content.svg'))
                                     | Содержание
                                 a.btn.btn-outline-primary.disabled(href='#') Скачать
                                 img.demands-block-img(src=require('images/block.svg'))
-                                
+
         .container
             .row
-                .col 
+                .col
                     .demands-block
                         .row
-                            .col 
+                            .col
                                 .demands-block-text Требования к основной вычислительной технике
                                 .demands-block-info PDF, 12 Мб
-                            .col 
-                                a.demands-block-link(href='#') 
+                            .col
+                                a.demands-block-link(href='#')
                                     img(src=require('images/content.svg'))
                                     | Содержание
                                 a.btn.btn-outline-primary(href='#') Скачать
-                .col 
+                .col
                     .demands-block
                         .row
-                            .col 
+                            .col
                                 .demands-block-text Требования к основной вычислительной технике
                                 .demands-block-info PDF, 12 Мб
-                            .col 
-                                a.demands-block-link(href='#') 
+                            .col
+                                a.demands-block-link(href='#')
                                     img(src=require('images/content.svg'))
                                     | Содержание
                                 a.btn.btn-outline-primary(href='#') Скачать
-                    
+
     //-section.section.bdb-gray.pb-4#using
         .container
             .row
-                .col 
+                .col
                     h3 Использование
-                    
-        .container
-            .row
-                .col 
-                    .demands-block
-                        .row
-                            .col 
-                                .demands-block-text Требования к технике
-                                .demands-block-info PDF, 12 Мб
-                            .col 
-                                a.demands-block-link(href='#') 
-                                    img(src=require('images/content.svg'))
-                                    | Содержание
-                                a.btn.btn-outline-primary(href='#') Скачать
-                .col 
-                    .demands-block
-                        .row
-                            .col 
-                                .demands-block-text Требования к технике
-                                .demands-block-info PDF, 12 Мб
-                            .col 
-                                a.demands-block-link(href='#') 
-                                    img(src=require('images/content.svg'))
-                                    | Содержание
-                                a.btn.btn-outline-primary(href='#') Скачать
-                                
-        .container
-            .row
-                .col 
-                    .demands-block
-                        .row
-                            .col 
-                                .demands-block-text Требования к технике
-                                .demands-block-info PDF, 12 Мб
-                            .col 
-                                a.demands-block-link(href='#') 
-                                    img(src=require('images/content.svg'))
-                                    | Содержание
-                                a.btn.btn-outline-primary(href='#') Скачать
-                .col 
 
-                                    
+        .container
+            .row
+                .col
+                    .demands-block
+                        .row
+                            .col
+                                .demands-block-text Требования к технике
+                                .demands-block-info PDF, 12 Мб
+                            .col
+                                a.demands-block-link(href='#')
+                                    img(src=require('images/content.svg'))
+                                    | Содержание
+                                a.btn.btn-outline-primary(href='#') Скачать
+                .col
+                    .demands-block
+                        .row
+                            .col
+                                .demands-block-text Требования к технике
+                                .demands-block-info PDF, 12 Мб
+                            .col
+                                a.demands-block-link(href='#')
+                                    img(src=require('images/content.svg'))
+                                    | Содержание
+                                a.btn.btn-outline-primary(href='#') Скачать
+
+        .container
+            .row
+                .col
+                    .demands-block
+                        .row
+                            .col
+                                .demands-block-text Требования к технике
+                                .demands-block-info PDF, 12 Мб
+                            .col
+                                a.demands-block-link(href='#')
+                                    img(src=require('images/content.svg'))
+                                    | Содержание
+                                a.btn.btn-outline-primary(href='#') Скачать
+                .col
+
+
     //-section.section.bdb-gray.bdb-gray.pb-4#documents
         .container
             .row
-                .col 
+                .col
                     h3 Документы
-                    
+
         .container
             .row
-                .col 
+                .col
                     .demands-block
                         .row
-                            .col 
+                            .col
                                 .demands-block-text Требования к технике
                                 .demands-block-info PDF, 12 Мб
-                            .col 
-                                a.demands-block-link(href='#') 
+                            .col
+                                a.demands-block-link(href='#')
                                     img(src=require('images/content.svg'))
                                     | Содержание
                                 a.btn.btn-outline-primary(href='#') Скачать
-                .col 
+                .col
                     .demands-block
                         .row
-                            .col 
+                            .col
                                 .demands-block-text Требования к технике
                                 .demands-block-info PDF, 12 Мб
-                            .col 
-                                a.demands-block-link(href='#') 
+                            .col
+                                a.demands-block-link(href='#')
                                     img(src=require('images/content.svg'))
                                     | Содержание
                                 a.btn.btn-outline-primary(href='#') Скачать
-                    
+
     section.section.implications#Implications
         .container
             .row
-                .col 
+                .col
                     h3 Истории успеха
-                    
+
         .container
             .row
                 .col-lg-4
@@ -300,27 +424,27 @@ block content
                             .person-name Игорь Романов
                             .person-position Руководитель отделения Минтранспорта
 
-                .col-lg-4 
+                .col-lg-4
                     .text «Мы — инициаторы некоммерческого проекта, цель которого — улучшение взаимодействия людей с государственными цифровыми сервисами.»
                     .person
                         img.person-img(src=require('images/person.png'))
                         .person-content
                             .person-name Игорь Романов
                             .person-position Руководитель отделения Минтранспорта
-                .col-lg-4 
+                .col-lg-4
                     .text «Мы — инициаторы некоммерческого проекта, цель которого — улучшение взаимодействия людей с государственными цифровыми сервисами.»
                     .person
                         img.person-img(src=require('images/person.png'))
                         .person-content
                             .person-name Игорь Романов
                             .person-position Руководитель отделения Минтранспорта
-                    
+
     section.section.section-blue#request
         .container
             .row
-                .col 
+                .col
                     h3 Отправить заявку
-        
+
         form
             .container
                 .row
@@ -336,7 +460,7 @@ block content
                         .form-group
                             label Ваш номер телефона
                             input.form-control
-                        
+
             .container
                 .row
                     .col-lg-4
@@ -352,4 +476,4 @@ block content
     //- include ../common/index/main-block
     //- include ../common/index/news-blogs
     //- include ../common/index/discussions
-    //- include ../common/index/public-video
+    include ../common/modals/modals

@@ -4,6 +4,10 @@ import 'bootstrap'
 
 import './assets/scss/app.scss'
 
+window.$ = window.jQuery = $
+
+require('./jquery.fancybox')
+
 // import Vue from 'vue'
 // import axios from 'axios'
 // import jquery from './jquery'
@@ -19,9 +23,13 @@ import './assets/scss/app.scss'
 // import 'slick-carousel/slick/slick.css'
 // import './awesomeicons.font'
 
-window.$ = window.jQuery = $
-
 $(document).ready(function () {
+    $('[data-fancybox="gallery"]').fancybox({
+        buttons: [
+            'close'
+        ]
+    })
+
     $('.js-scroll').click(function(e) {
         e.preventDefault()
         let id = $(this).attr('href')
