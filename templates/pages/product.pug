@@ -22,7 +22,12 @@ block content
                                     //-.subtitle
                                         img.card-img-top(src=require('images/product.svg'))
                                         | Действующий
-                                    .text Основная цель использования информационных технологий в сфере образования - осуществление государственного управление и проведения государственной политики в сфере образования города Москвы и в интересах жителей города Москвы.
+                                    .text
+                                        | Основная цель использования информационных технологий в сфере образования - осуществление государственного управление и
+                                        =' '
+                                        a(href="#") проведения государственной политики
+                                        =' '
+                                        | в сфере образования города Москвы и в интересах жителей города Москвы.
 
                                     div.about-product-links.mb-4
                                         ul
@@ -305,7 +310,12 @@ block content
                                 .demands-block-text Требования к основной вычислительной технике
                                 .demands-block-info PDF, 12 Мб
                             .col
-                                a.demands-block-link(href='#' data-toggle="modal" data-target="#demand1")
+
+                                a.modal-link(href='#' data-toggle="modal" data-target="#implications-block1")
+                                    img(src=require('images/content.svg'))
+                                    span.modal-link-text Содержание
+
+                                //-a.demands-block-link(href='#' data-toggle="modal" data-target="#demand1")
                                     img(src=require('images/content.svg'))
                                     | Содержание
                                 a.btn.btn-outline-primary.disabled(href='#') Скачать
@@ -435,7 +445,17 @@ block content
         .container
             .row
                 .col-lg-4
-                    .text «Мы — инициаторы некоммерческого проекта, цель которого — улучшение взаимодействия людей с государственными цифровыми сервисами.»
+                    .text
+                        | «Мы — инициаторы некоммерческого проекта, цель которого — улучшение взаимодействия людей с государственными цифровыми сервисами.»
+
+                        | «Мы — инициаторы некоммерческого проекта, цель которого
+                        | «Мы — инициаторы некоммерческого проекта, цель которого — улучшение взаимодействия людей с государственными цифровыми сервисами.»
+                        | «Мы — инициаторы некоммерческого проекта, цель которого — улучшение взаимодействия людей с государственными цифровыми сервисами.»
+
+                    .implications-footer
+                        a.modal-link(href='#' data-toggle="modal" data-target="#implications-block1")
+                            img(src=require('images/content.svg'))
+                            span.modal-link-text Читать
                     .person
                         img.person-img(src=require('images/person.png'))
                         .person-content

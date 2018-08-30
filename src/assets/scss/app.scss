@@ -362,6 +362,15 @@ h4 {
     background: #0089bd;
     padding: 60px 0;
 
+  a:not(.btn) {
+    color: #fff;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
     &-body {
         display: -webkit-flex;
         display: -moz-flex;
@@ -455,6 +464,18 @@ h4 {
       .about-product-link {
         color: #fff;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .main-product-content {
+    border-top: 0 !important;
+  }
+
+  .main-product-with-video {
+    iframe {
+      min-height: 200px;
     }
   }
 }
@@ -646,6 +667,10 @@ h4 {
     padding: 18px 23px;
     margin-bottom: 40px;
 
+  .modal-link {
+    margin-right: 24px;
+  }
+
     &-text {
         font-size: 16px;
         font-weight: 600;
@@ -698,7 +723,69 @@ h4 {
     .text {
         font-size: 16px;
         margin-bottom: 18px;
+      height: 150px;
+      overflow: hidden;
+      position: relative;
+
+      &:after {
+        content: "";
+        background-image: linear-gradient(180deg,hsla(0,0%,100%,0),#fff);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+      }
     }
+}
+
+.modal-link {
+  color: #0089bd;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+
+  img {
+    display: inline-block;
+    margin-top: -3px;
+    margin-right: 5px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    .modal-link-text {
+      color: #0089bd;
+      border-bottom: 1px dotted transparent;
+      text-decoration: none;
+    }
+  }
+
+  .modal-link-text {
+    border-bottom: 1px dotted #0089bd;
+    display: inline-block;
+    line-height: 20px;
+
+    &:hover {
+
+    }
+  }
+}
+
+.implications-content {
+  height: 180px;
+}
+
+.implications-footer {
+  text-align: center;
+  margin-bottom: 12px;
+  margin-top: -12px;
+  display: flex;
+  justify-content: center;
 }
 
 .person {
