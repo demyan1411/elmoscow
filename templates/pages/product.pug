@@ -4,22 +4,39 @@ block menu
     include ../common/partials/menu-products
 
 block content
-    section.main-product
+    section.main-product.main-product-with-video.py-5
         .container
             .row
                 .col
+                    .subtitle.mb-2 управление
+                    h1 Система массовой выдачи сертификатов ключей подписи
+
                     .main-product-body
-                        .main-product-image
-                            img(src=require('images/icon-edu.png'))
-                        .main-product-content
-                            h1 Образование
+                        .row
+                            .col-lg-6
+                                iframe(width="100%" height="auto" src="https://www.youtube.com/embed/frhAL3G1U38?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen autoplay="1")
 
-                            //-.subtitle
-                                img.card-img-top(src=require('images/product.svg'))
-                                | Действующий
-                            .text Основная цель использования информационных технологий в сфере образования - осуществление государственного управление и проведения государственной политики в сфере образования города Москвы и в интересах жителей города Москвы.
+                            .col-lg-6
+                                .main-product-content
 
-                            a.btn.btn-primary.js-scroll(href='#request') Отправить заявку
+                                    //-.subtitle
+                                        img.card-img-top(src=require('images/product.svg'))
+                                        | Действующий
+                                    .text Основная цель использования информационных технологий в сфере образования - осуществление государственного управление и проведения государственной политики в сфере образования города Москвы и в интересах жителей города Москвы.
+
+                                    div.about-product-links.mb-4
+                                        ul
+                                            li
+                                                a.about-product-link(href='#')
+                                                    img.card-img-top(src=require('images/clip2.svg'))
+                                                    | презентация (PDF)
+
+                                            li
+                                                a.about-product-link(href='#')
+                                                    img.card-img-top(src=require('images/clip2.svg'))
+                                                    | Информация для руководителя (PDF)
+
+                                    a.btn.btn-primary.js-scroll(href='#request') Отправить заявку
 
     section.product-nav.bdb-gray
         .container
@@ -50,7 +67,7 @@ block content
     section.section.bdb-gray.wysiwyg#about-product
         .container
             .row
-                .col-lg-8
+                .col
                     h3 О продукте
                     p Среди главных задач проекта — получение мнения горожан по актуальным вопросам, касающимся развития Москвы. Опросы «Активного гражданина» делятся на три категории: общегородские, отраслевые и районные. За активное участие в опросах начисляются бонусные баллы, которые можно обменять на вознаграждения.
 
@@ -165,7 +182,7 @@ block content
                                         | Департамент городского имущества
 
 
-                .col-lg-4
+                //-.col-lg-4
                     div.about-product-links
                         strong Файлы для скачивания
 

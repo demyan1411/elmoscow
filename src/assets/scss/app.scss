@@ -373,6 +373,8 @@ h4 {
     h1 {
         text-align: left;
         margin-bottom: 21px;
+      font-size: 38px;
+      line-height: 45px;
     }
 
     .main-product-image {
@@ -430,6 +432,31 @@ h4 {
         max-width: 540px;
         margin-bottom: 30px;
     }
+
+  &-with-video {
+    iframe {
+      width: 100%;
+      height: auto;
+      min-height: 400px;
+    }
+
+    .main-product-body {
+      display: block;
+    }
+
+    .main-product-content {
+      border-top: 1px solid #fff;
+      padding-top: 15px;
+    }
+
+    .about-product-links {
+      color: #fff;
+
+      .about-product-link {
+        color: #fff;
+      }
+    }
+  }
 }
 
 .product-nav {
