@@ -86,6 +86,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+      height: 100px;
 
         img {
             display: inline-block;
@@ -212,6 +213,18 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 1170px) {
+  .cards-with-footer {
+      .card-footer {
+        .btn {
+          span {
+            display: none;
+          }
+        }
+      }
+  }
 }
 
 @media screen and (max-width: 992px) {
