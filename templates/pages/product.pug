@@ -88,7 +88,7 @@ block content
                         li «Электронный журнал и дневник учащегося»
                         li «НСИ и Реестры системы образования»
 
-                    table
+                    //-table
                         colgroup
                             col
                             col
@@ -310,16 +310,17 @@ block content
                                 .demands-block-text Требования к основной вычислительной технике
                                 .demands-block-info PDF, 12 Мб
                             .col
+                                .demands-links
+                                    a.modal-link(href='#' data-toggle="modal" data-target="#implications-block1")
+                                        img(src=require('images/content.svg'))
+                                        span.modal-link-text Содержание
 
-                                a.modal-link(href='#' data-toggle="modal" data-target="#implications-block1")
-                                    img(src=require('images/content.svg'))
-                                    span.modal-link-text Содержание
-
-                                //-a.demands-block-link(href='#' data-toggle="modal" data-target="#demand1")
-                                    img(src=require('images/content.svg'))
-                                    | Содержание
-                                a.btn.btn-outline-primary.disabled(href='#') Скачать
-                                img.demands-block-img(src=require('images/block.svg'))
+                                    //-a.demands-block-link(href='#' data-toggle="modal" data-target="#demand1")
+                                        img(src=require('images/content.svg'))
+                                        | Содержание
+                                    .demands-links-block
+                                        a.btn.btn-outline-primary.disabled(href='#') Скачать
+                                        img.demands-block-img(src=require('images/block.svg'))
                 .col
                     .demands-block
                         .row
@@ -327,11 +328,14 @@ block content
                                 .demands-block-text Требования к основной вычислительной технике
                                 .demands-block-info PDF, 12 Мб
                             .col
-                                a.demands-block-link(href='#' data-toggle="modal" data-target="#demand1")
-                                    img(src=require('images/content.svg'))
-                                    | Содержание
-                                a.btn.btn-outline-primary.disabled(href='#') Скачать
-                                img.demands-block-img(src=require('images/block.svg'))
+                                .demands-links
+                                    a.demands-block-link(href='#' data-toggle="modal" data-target="#demand1")
+                                        img(src=require('images/content.svg'))
+                                        | Содержание
+
+                                    .demands-links-block
+                                        a.btn.btn-outline-primary.disabled(href='#') Скачать
+                                        img.demands-block-img(src=require('images/block.svg'))
 
         .container
             .row
@@ -342,10 +346,13 @@ block content
                                 .demands-block-text Требования к основной вычислительной технике
                                 .demands-block-info PDF, 12 Мб
                             .col
-                                a.demands-block-link(href='#')
-                                    img(src=require('images/content.svg'))
-                                    | Содержание
-                                a.btn.btn-outline-primary(href='#') Скачать
+                                .demands-links
+                                    a.demands-block-link(href='#')
+                                        img(src=require('images/content.svg'))
+                                        | Содержание
+
+                                    .demands-links-block
+                                        a.btn.btn-outline-primary(href='#') Скачать
                 .col
                     .demands-block
                         .row

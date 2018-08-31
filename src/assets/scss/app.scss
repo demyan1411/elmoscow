@@ -869,6 +869,16 @@ form {
     }
 }
 
+.demands-links {
+  display: flex;
+  align-items: center;
+}
+
+.demands-links-block {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 1140px) {
     .about-product {
         flex-direction: column;
@@ -960,4 +970,16 @@ form {
             }
         }
     }
+}
+
+@media screen and (max-width: 350px) {
+  .demands-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .demands-links-block {
+    margin-top: 13px;
+    //margin-left: -10px;
+  }
 }
