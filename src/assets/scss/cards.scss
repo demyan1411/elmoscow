@@ -102,6 +102,38 @@
     }
 }
 
+.card.card-new {
+    background-size: cover; background-position: center 60px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+
+    .card-header {
+        height: 100px; margin-bottom: 0px; background-color: #148abb; margin-left: -1px; margin-right: -1px;
+
+        span {
+            color: #FFFFFF; font-size: 26px;
+        }
+    }
+
+    .car-image {
+        filter: invert(100%); -webkit-filter: invert(100%); -moz-filter: invert(100%); -o-filter: invert(100%); -ms-filter: invert(100%);
+    }
+
+    .card-body {
+        height: 250px;
+        overflow: hidden;
+        border: 0;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    .card-footer {
+        background: none;
+    }
+}
+
 .color-red {
     color: #d65492;
 }
@@ -111,7 +143,7 @@
 }
 
 .car-image {
-    height: 33px;
+    height: 42px;
 }
 
 .cards-with-footer {
