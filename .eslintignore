@@ -6,5 +6,7 @@ src/components/*.js
 src/components/**/*.js
 src/helpers/**
 src/jquery.fancybox.js
+src/jquery.montage.min.js
+src/jquery.montage.js
 test/**
 src/modules/dealreg/app/helpers/locales/

@@ -20,6 +20,7 @@
     "jquery-validation": "^1.17.0",
     "normalize-scss": "^7.0.1",
     "popper.js": "^1.12.9",
+    "shufflejs": "^5.2.0",
     "slick-carousel": "^1.8.1",
     "vee-validate": "^2.0.6",
     "vue": "^2.5.2",

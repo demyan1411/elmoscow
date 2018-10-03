@@ -72,6 +72,16 @@ h2 {
     }
 }
 
+.am-wrapper{
+	float:left;
+	position:relative;
+	overflow:hidden;
+}
+.am-wrapper img{
+	position:absolute;
+	outline:none;
+}
+
 .link-blue {
     font-weight: 600;
     color: $blue;
@@ -823,6 +833,11 @@ h4 {
         text-align: left;
         color: #757575;
     }
+}
+
+.white-error-text {
+    color: #fff !important;
+    font-weight: bold;
 }
 
 form {
